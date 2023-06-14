@@ -1,0 +1,534 @@
+ @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+ 
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #112B3C;
+}
+
+/*Header css start*/
+header {
+    box-shadow: 0 3px 11px  -6px  gray;
+    padding-bottom: 1px;
+ }
+
+ .container {
+    width: 1140px;
+    margin: 20px auto;
+ }
+
+.nevber {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+}
+
+.logo-left{
+  margin-top: 10px;
+}
+
+.nav-middle ul li {
+  list-style: none;
+}
+
+.nav-middle ul li a {
+  text-decoration: none;
+  color: #112B3C;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px ;
+}
+
+.nav-middle ul li:hover a {
+  color: #F66B0E;
+}
+
+.menubtn {
+  color: #112B3C;
+}
+
+.b-content {
+ background-color: white;
+ color: #112B3C;
+ padding: 10px 30px;
+ margin-right: 10px;
+ cursor: pointer;
+ font-size: 16px;
+ border: none;
+ border-radius: 3px;
+}
+
+.menubtn:hover .b-content {
+  background: #F66B0E;
+  color: white;
+}
+
+.b-buy {
+  background: #F66B0E;
+  color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+}
+
+.menubtn:hover .b-buy {
+  background: #F66B0E;
+  color: white;
+}
+
+/*Header css end*/
+
+
+/*banner section css start*/
+.banner {
+     padding: 80px 0;
+}
+
+.banner h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 100%;
+  text-align: center;
+  color: #112B3C;
+}
+
+.banner-img {
+  position: relative;
+  left: 939px;
+  bottom: 137px;
+}
+
+.banner p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  text-align: center;
+  color: #828282;
+  margin-top: -195px;
+}
+
+.banner form {
+  text-align: center;
+}
+
+.banner form input {
+ margin-top: 30px;
+ padding: 30px;
+ width: 60%;
+ border: none;
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ position: relative;
+ z-index: 999;
+ border-radius: 5px;
+}
+
+.banner form input:focus{
+  outline: none;
+}
+
+.banner form input::placeholder {
+  color: BDBDBD;
+  font-size: 16px;
+}
+
+.img-fluid {
+  min-width: 100%;
+  height: auto;
+  margin-top: -55px;
+  z-index: -1;
+}
+
+/*banner section css end*/
+
+/*about-us section css start*/
+
+   .about-us{
+    width: 100%;
+    padding: 100px 0px;
+   }
+ 
+ .sec-title h2 {
+height: 64px;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 100%;
+color: #112B3C;
+margin-bottom: 24px;
+ }
+
+.sec-title p {
+width: 470px;
+height: 64px;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 160%;
+color: #828282;
+}
+
+.about-us .sec-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 32px;
+}
+
+.about-us .sec-content .content-left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 32px;
+}
+
+.about-us .sec-content .content-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 32px;
+}
+
+.content-right img {
+  margin-bottom: 78px;
+}
+
+.about-item h3 {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 100%;
+color: #F66B0E;
+margin-bottom: 14px;
+}
+
+.about-item h4 {
+  font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 100%;
+color: #000000;
+margin-bottom: 10px;
+}
+
+.about-item p {
+  font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+line-height: 160%;
+color: #BDBDBD;
+}
+
+.content-right .up {
+  margin-top: -74px;
+}
+
+.content-right .down {
+  margin-bottom: -74px;
+}
+
+/*about-us section css end*/
+
+/* products section css start*/
+
+ .products {
+    width: 100%;
+    padding: 100px 0px;
+ }
+ 
+ .text-center{
+  text-align: center;
+ }
+
+.filter-menu li {
+  margin: 0 16px;
+  list-style: none;
+  display: inline-block;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: #828282;
+}
+
+.active {
+  color: #F66B0E !important; 
+}
+
+.products-gallery {
+  margin-top: 100px;
+  display: grid;
+  column-gap: 32px;
+  row-gap: 42px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.products-gallery img {
+  width: 120px;
+}
+
+.p-item {
+  padding: 30px;
+  background: linear-gradient(to top,#FFF8F0 65% , white );
+}
+
+.p-item h4 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.p-item span {
+  display: flex;
+  justify-content: space-between;
+}
+
+ .p-item img {
+  margin-bottom: 70px;
+ }
+
+.p-item:hover img{
+  display: inline-block;
+ transition: 1s;
+ transform: rotate(360deg);
+}
+
+/* products section css end*/
+
+/* testimonial section css start*/
+
+ .testimonial{
+  width: 100%;
+  background-color: #112B3C;
+  padding: 80px 0;
+ }
+
+ .testimonial .sec-title h2 {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100px;
+  margin-bottom: 90px;
+ }
+
+  .testimonial .user-msg h3 {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+ }
+
+ .testimonial .user-msg img {
+left: 8.33%;
+right: 53.42%;
+top: 13.29%;
+bottom: 13.33%;
+ }
+
+ .testimonial .user-msg h6 {
+  color: #F66B0E;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  margin-top: 25px;
+  margin-bottom: 4px;
+ }
+
+ .testimonial .user-msg p {
+  color: #FFFFFFCC;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+ }
+
+  .reviwe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+/* testimonial section css end*/
+
+/* contact-us section css start*/
+
+
+ .contact-us{
+  margin-top: 90px;
+}
+.right-form h2{
+  font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    color: #112B3C;
+
+}
+.right-form p{
+  font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #828282;
+}
+.form-wrapper{
+  width: 350px;
+}
+.contact-us-title{
+  margin-top: 200px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+  
+}
+form input:: placeholder{
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #BDBDBD;
+}
+
+form input textarea:: placeholder{
+  font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #BDBDBD;
+}
+
+.form-flex{
+  display: flex;
+  
+}
+.form-wrapper form input{
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+.form-wrapper button{
+    justify-content: center;
+    align-items: center;
+    padding: 20px 27px;
+    position: absolute;
+    background: #F66B0E;
+    width: 28%;
+    border: none;
+    font-size: x-small;
+    color: white;
+}
+
+.content-right .down img {
+  margin-right: 24px;
+  margin-top: 6px;
+}
+ 
+ .content-left  img {
+  margin-right: 24px;
+ }
+
+.right-form {
+  margin-left: 150px;
+}
+.right-form h2 {
+  margin-bottom: 30px;
+}
+.right-form p{
+  margin-bottom: 30px;
+}
+
+
+/* contact-us section css end*/
+
+
+/* footer section css start*/
+   
+ footer {
+width: 100%;
+background-color: #FFF8F0;
+}
+.f-content{
+  padding: 60px 0;
+}
+.copyright{
+  padding: 20ps 0;
+  text-align: center;
+}
+.f-content{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.f-item address{
+  width: 70%;
+  font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #112B3C;
+}
+.f-item img{
+  margin-bottom: 20px;
+}
+.f-item h6{
+  font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 160%;
+    color: #112B3C;
+    margin-bottom: 22px;
+
+}
+.f-item ul li{
+  transition: 0.5s;
+  list-style: none;
+  margin-bottom: 8px;
+}
+.f-item ul li a{
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #112B3C;
+    text-decoration: none;
+
+
+}
+.f-item ul li:hover{
+  margin-left: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.copyright p{
+  margin-bottom: 15px;
+}
+
+
+/* footer section css end*/
